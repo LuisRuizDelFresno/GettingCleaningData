@@ -34,4 +34,4 @@ library(reshape)
 totalDBSubject.melted <- melt(totalDBSubject, id = c("subject", "activity"))
 tidyData <- cast(totalDBSubject.melted, subject + activity ~ variable, mean)
 
-write.table(tidyData, file = "tidyData.txt", quote = FALSE)
+write.table(tidyData, file = "tidyData.txt", quote = FALSE, row.names = FALSE)
