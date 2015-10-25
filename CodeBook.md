@@ -2,6 +2,7 @@
 ****************************************************************
 Load and merge train and test data sets (Note: first train then test; it's important
 to keep this order on preparing new columns later on)
+
 > train <- read.table("train/X_train.txt", na.strings = "N/A") 
 > test <- read.table("test/X_test.txt", na.strings = "N/A")
 > totalDB <- rbind(train, test)			
